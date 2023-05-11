@@ -4,7 +4,7 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = ">= 2.0" # Optional but recommended in production
+      version = ">= 3.0" # Optional but recommended in production
     }    
   }
 }
@@ -16,6 +16,6 @@ provider "azurerm" {
 
 # Create Resource Group 
 resource "azurerm_resource_group" "my_demo_rg1" {
-  location = "eastus"
+  location = "europe"
   name = "my-demo-rg1"  
 }
