@@ -5,8 +5,8 @@ resource "azurerm_virtual_network" "myvnet" {
   location            = azurerm_resource_group.myrg.location
   resource_group_name = azurerm_resource_group.myrg.name
   tags = {
-    "Name" = "myvnet-1"
-    #"Environment" = "Dev"  # Uncomment during Step-10
+    name = "myvnet-1"
+    #environment = "Dev"  # Uncomment during Step-10
   }
 }
 
