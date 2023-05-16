@@ -19,7 +19,7 @@ resource "azurerm_linux_virtual_machine" "mylinuxvm" {
   source_image_reference {
     publisher = "RedHat"
     offer = "RHEL"
-    sku = "83-gen2"
+    sku = "87-gen2"
     version = "latest"
   }
   custom_data = filebase64("${path.module}/app-scripts/app1-cloud-init.txt")
